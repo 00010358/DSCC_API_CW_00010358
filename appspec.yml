@@ -1,20 +1,17 @@
 version: 0.0
 os: windows
 files:
-  - source: /00010358.sln
-    destination: /var/www
-  - source: /deploy-scripts/webapi.service
-    destination: /etc/systemd/system
+  - source: 00010358
+    destination: \var\www
+  - source: \deploy-scripts\webapi.service
+    destination: \etc\systemd\system
 hooks:
   BeforeInstall:
-    - location: /deploy-scripts/before-install.sh
+    - location: \deploy-scripts\before-install.sh
       timeout: 180
-      runas: root
   ApplicationStop:
-    - location: /deploy-scripts/stop-install.sh
+    - location: \deploy-scripts\stop-install.sh
       timeout: 180
-      runas: root
   ApplicationStart:
-    - location: /deploy-scripts/start-install.sh
+    - location: \deploy-scripts\start-install.sh
       timeout: 180
-      runas: root
