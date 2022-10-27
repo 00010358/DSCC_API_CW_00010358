@@ -2,8 +2,8 @@
 Description=.NET DSCC CW Web API
 
 [Service]
-WorkingDirectory=\var\www\
-ExecStart/usr/bin/dotnet \var\www\00010358.dll
+WorkingDirectory=/var/www/
+ExecStart/usr/bin/dotnet /var/www/00010358.dll
 Restart=always
 
 RestartSec=10
