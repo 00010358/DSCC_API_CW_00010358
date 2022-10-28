@@ -1,2 +1,3 @@
 # enable and start systemd service
-systemctl restart webapi.service
+systemctl enable webapi.service
+systemctl start webapi.service
