@@ -1,5 +1,5 @@
 version: 0.0
-os: windows
+os: linux
 files:
   - source: 00010358
     destination: /var/www
